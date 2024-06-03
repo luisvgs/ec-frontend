@@ -1,13 +1,15 @@
 import axios from "axios";
 
 export const fetchAllProducts = async () => {
-  const response = await axios.get("http://www.localhost:3000/product/all");
+  const response = await axios.get(
+    import.meta.env.VITE_PRODUCT_URL + "/product/all"
+  );
   return response.data;
 };
 
 export const fetchProductById = async (id) => {
   const response = await axios.get(
-    `http://www.localhost:3000/product/id/?id=${id}`
+    `${import.meta.env.VITE_PRODUCT_URL}/product/id/?id=${id}`
   );
   return response.data;
 };
