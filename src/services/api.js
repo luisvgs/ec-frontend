@@ -15,20 +15,25 @@ export const fetchProductById = async (id) => {
 };
 
 export const fetchAllOrders = async () => {
-  const response = await axios.get("http://localhost:8080/order/all");
+  const response = await axios.get(
+    `${import.meta.env.VITE_ORDER_URL}/order/all`
+  );
   return response.data;
 };
 
 export const fetchOrderById = async (id) => {
   const response = await axios.get(
-    `http://www.localhost:8080/order/withId/${id}`
+    `${import.meta.env.VITE_ORDER_URL}/order/withId/${id}`
   );
   return response.data;
 };
 
 export const createOrder = async (product) => {
   console.log("proddd ", product);
-  return await axios.post("http://localhost:8080/order/create", product);
+  return await axios.post(
+    `${import.meta.env.VITE_ORDER_URL}/order/create`,
+    product
+  );
 };
 
 export const fetchProductsByCategory = async (category) => {
