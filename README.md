@@ -6,7 +6,7 @@
 3. Keep track of your orders in My Orders tab.
    
 ### Application's high level design
-![Untitled 2023 03 20 1351](https://iili.io/JpBmmN4.png)
+![Untitled 2023 03 20 1351](https://iili.io/JpCjaXS.png)
 
 ### How to run locally?
 #### Frontend:
