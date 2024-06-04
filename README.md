@@ -1,5 +1,10 @@
-# eCommerce Shop
+# eCommerce Shop: https://ec-frontend-theta.vercel.app/
 
+## How to use?
+1. Add product(s) to your cart.
+2. Click on My Cart and press buy.
+3. Keep track of your orders in My Orders tab.
+   
 ### Application's high level design
 ![Untitled 2023 03 20 1351](https://iili.io/JpBmmN4.png)
 
